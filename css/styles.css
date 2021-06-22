@@ -1,0 +1,271 @@
+.top-container {
+  background-color:#e4f9f5;
+  /*text-decoration:overline;
+text-decoration:line-through;*/
+  position: relative;
+  padding-top: 100px;
+}
+
+
+/*.mid-container{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+
+  border: solid 20px;
+  word-wrap:break-word;
+  margin-left: 260px;
+}
+.bottom-container{
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  border: solid 10px;
+  margin-left: 500px;
+}*/
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  animation-name: top-cloud;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes top-cloud {
+  from{top:50px;right: 300px;}
+  to{top:100px; right: 350px;  }
+
+}
+
+.bottom-cloud {
+  display: block;
+  position: absolute;
+  bottom: 300px;
+  left: 350px;
+  animation-name:bottom-cloud;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes bottom-cloud {
+  from{bottom:300px;left: 350px;}
+  to{bottom:350px; left: 400px;  }
+}
+.myimage{
+  margin-top: 4rem;
+  width: 10rem;
+  height: 10rem;
+}
+.animated-me{
+
+  width: 7rem;
+  height: 7rem;
+  position: fixed;
+  left: 5rem;
+  top: 3rem;
+  border-radius: 3rem;
+  transition: transform 1s;
+  background-color: #e4f9f5;
+
+}
+.animated-me:hover{
+  background-color: white;
+  transform: rotate(360deg);
+}
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #e4f9f5;
+
+  color: #40514E;
+}
+p{
+  line-height: 2;
+}
+hr{
+  border: dotted #5E6E6E 10px ;
+  border-bottom: none;
+  width: 5%;
+  margin: 75px auto;
+
+
+}
+h2{
+  color:#66BFBF;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+h3{
+  color:#11999E;
+}
+.intro{
+  width: 30%;
+  margin: auto;
+}
+.spn {
+  font-family: 'Viaoda Libre', cursive;
+}
+
+#para {
+  color:#66BFBF;
+  font-size: 2rem;
+  /* NOTE: equivalent to 50px but dynamic */
+  /*font-family: 'Sacramento', cursive;*/
+  margin: 0 auto 50px;
+  font-weight: normal;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.footer-link , .footer-link-twitter{
+  color: #11999E;
+  margin: 3rem;
+  margin-left: 0;
+  font-weight:900;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer-link:hover , .footer-link-twitter:hover{
+  color: white;
+
+}
+/*.footer-link:hover{
+  color: #0077b5;
+}
+.footer-link-twitter:hover{
+  color: #00acee;
+}*/
+h1 {
+  width: 50%;
+  /* NOTE:  custom width detected, text align not gonna be in center  */
+  /* NOTE: To Make it center set the margin left and right to AUTO */
+  margin: 50px auto 0;
+  color: #66BFBF;
+/*  background: linear-gradient(270deg, #00EAD3 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  /* NOTE: /*===========================Concept========================*/
+  /*1 em =16px=100%
+      So, 1px=1/16em
+      => 90px=1/16 x 90 em
+      => 5.625em */
+  font-size: 5.625rem;
+  font-family: 'Sacramento', cursive;
+
+  transition:  1s;
+}
+
+h1:hover {
+
+  background: linear-gradient(270deg, #00EAD3 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
+.skill-row{
+
+  width:50%;
+
+  text-align: center;
+  margin: 100px auto 0;
+  text-align: left;
+  line-height: 2;
+
+}
+
+.skill-img-odd{
+  width: 20%;
+  float: left;
+  padding-right: 30px;
+
+
+}
+.skill-img-even{
+  width: 15%;
+  float: right;
+  padding-left: 30px;
+}
+/* NOTE: ======================Clear Property for concepts================= */
+/*.skill1-description{
+  clear: left; //if anything is there in the left then it will move down to clear its left.
+}
+.skill2-description{
+  clear:right; // if any thing is there on the right of this description then it'll move down to clear its right.
+}*/
+.btn {
+  margin: 2rem;
+   background: #66BFBF;
+   background-image: -webkit-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -moz-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -ms-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -o-linear-gradient(top, #66BFBF, #11999E);
+   background-image: -webkit-gradient(to bottom, #66BFBF, #11999E);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 10px;
+   color: #EAF6F6;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   padding: 15px;
+
+
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #FFFFFF 1px;
+   background: #11999E;
+   background-image: -webkit-linear-gradient(top, #11999E, #66BFBF);
+   background-image: -moz-linear-gradient(top, #11999E, #66BFBF);
+   background-image: -ms-linear-gradient(top, #11999E, #66BFBF);
+   background-image: -o-linear-gradient(top, #11999E, #66BFBF);
+   background-image: -webkit-gradient(to bottom, #11999E, #66BFBF);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 10px;
+   text-decoration: none;
+
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding:75px 0 0 0;
+}
+.contact-message{
+  width: 30%;
+  margin: 40px auto;
+}
+.footer{
+  padding: 2.5rem 0;
+  margin: 0;
+  color: #EAF6F6;
+}
+
+.image{
+  width: 2%;
+  padding: 0;
+  position: relative;
+  top: 10px;
+  margin: 0;
+
+}
+
+/*
+#logo-holder {position:relative; width:10px; height:10px; /*dimensions of image}
+#logo-holder .image,
+#logo-holder .text {transition: opacity 0.5s ease-in-out;}
+
+#logo-holder:hover .image {opacity:0;}
+#logo-holder:hover .text {opacity:1;}
+*/
